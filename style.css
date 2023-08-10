@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* nav bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(75, 155, 155);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 200px;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: solid;
+    padding-inline: 10px;
+    color: bisque;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-shadow: 2px 5px 5px blue;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+
+}
+
+/* home */
+#home::before {
+    content: '';
+    position: absolute;
+    background-image: url('https://m.media-amazon.com/images/I/81OcJVS5QrL._SL1500_.jpg');
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.main {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    right: 10%;
+    z-index: 0;
+}
+
+.heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: rgb(32, 6, 44);
+    font-size: 50px;
+}
+
+#home .btn {
+    padding: 20px 30px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgb(196, 179, 245);
+    border-radius: 12.5%;
+}
+
+#home .btn:hover {
+    /* cursor: pointer; */
+    /* background-color: rgb(220, 224, 245); */
+    cursor: pointer;
+}
+
+/* about */
+#about {
+    display: flex;
+    /* flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between; */
+    /* padding: 20px; */
+    /* margin-bottom: 50px; */
+}
+
+/* @media screen and (max-width:1200px) {
+    #about {
+        flex-direction: column;
+    }
+} */
+
+.pic {
+    display: flex;
+}
+
+.pic img {
+    width: 576px;
+    height: 500px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    background-color: rgb(45, 148, 148);
+    /* border: 20px; */
+    /* box-shadow: 100px; */
+    padding-inline: 10px;
+    height: 500px;
+}
+
+.intro h2 {
+    font-size: 30px;
+}
+
+.intro p {
+    font-size: 17px;
+}
+
+.youtube {
+    width: 350px;
+    height: 250px;
+    padding: 50px;
+}
+
+.vid {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(50, 141, 167);
+    padding: 5px;
+    /* gap: 30px; */
+    /* border: 8px solid rgb(50, 141, 167); */
+}
+
+.vid .youtube:hover {
+    border: 8px solid white;
+    transition: .4s all ease-in;
+}
+
+#writing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 46px;
+    margin-bottom: 50px;
+    background-color: rgb(106, 184, 223);
+}
+
+#book1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 239px;
+    border: double 8px black;
+    border-radius: 40px;
+    margin: 50px;
+    padding: 30px;
+    /* float:right; */
+    background-color: rgb(95, 130, 160);
+}
+
+#book1:hover {
+    background-position: left bottom;
+    color: white;
+    /* border: none; */
+    box-shadow: 0 0 15px 8px black;
+
+}
+
+.img1 {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#book2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 239px;
+    border: double 8px black;
+    ;
+    border-radius: 40px;
+    margin: 50px;
+    padding: 30px;
+    /* float: right; */
+    background-color: rgb(95, 130, 160);
+}
+
+#book2:hover {
+    background-position: left bottom;
+    color: white;
+    /* border: none; */
+    box-shadow: 0 0 15px 8px black;
+
+}
+
+.img2 {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#book3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 239px;
+    border: double 8px black;
+    ;
+    border-radius: 40px;
+    margin: 50px;
+    padding: 30px;
+    /* float:right; */
+    background-color: rgb(95, 130, 160);
+}
+
+#book3:hover {
+    /* background-position: left bottom; */
+    color: white;
+    /* border: none; */
+    box-shadow: 0 0 15px 8px black;
+
+}
+
+.img3 {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#book4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 239px;
+    border: double 8px black;
+    ;
+    border-radius: 40px;
+    margin: 50px;
+    padding: 30px;
+    /* float:right; */
+    background-color: rgb(95, 130, 160);
+}
+
+#book4:hover {
+    background-position: left bottom;
+    color: white;
+    /* border: none; */
+    box-shadow: 0 0 15px 8px black;
+
+}
+
+.img4 {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(80, 128, 183);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    padding: 10px;
+    margin: 20px;
+}
+
+.send {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+
+.send:hover {
+    color: white;
+    background-color: rgb(12, 35, 111);
+}
+
+#book1 p {
+    width: 200px;
+    text-align: justify;
+}
+
+#book2 p {
+    width: 200px;
+    text-align: justify;
+}
+
+#book3 p {
+    width: 200px;
+    text-align: justify;
+}
+
+#book4 p {
+    width: 200px;
+    text-align: justify;
+}
+
+@media (min-width:0px) {
+    nav ul {
+
+        column-gap: 5px;
+
+    }
+    nav ul li {
+        font-size: 12px;
+    }
+    
+}
+
+@media (min-width:480px) {
+    nav ul {
+
+        column-gap: 35px;
+
+    }
+
+}
+    @media (min-width :576px) {
+        nav ul {
+
+            column-gap: 60px;
+    
+    }
+}
+@media (min-width :992px) {
+    nav ul {
+
+        column-gap: 100px;
+
+}
+}
+@media (min-width :1200px) {
+    nav ul {
+
+        column-gap: 200px;
+
+}
+}
